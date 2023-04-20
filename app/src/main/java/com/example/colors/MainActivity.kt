@@ -1,14 +1,11 @@
 package com.example.colors
 
-import android.content.Intent
 import android.graphics.Color
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
 import android.widget.Button
-import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.textfield.TextInputLayout
 
 class MainActivity : AppCompatActivity() {
@@ -38,7 +35,7 @@ class MainActivity : AppCompatActivity() {
         }
      else {
 
-            var completeColorCode = "#$RED$GREEN$BLUE"
+            val completeColorCode = "#$RED$GREEN$BLUE"
             val COLOR_DISPLAY = findViewById<TextView>(R.id.color_display)
             COLOR_DISPLAY.setBackgroundColor(Color.parseColor(completeColorCode))
 
